@@ -8,6 +8,7 @@ TagManager:
   - xanh 2
   - xanh 1
   - blue
+  - red
   layers:
   - Default
   - TransparentFX

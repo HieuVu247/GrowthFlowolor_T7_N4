@@ -20,10 +20,10 @@ public class BoxSwapperWithCubes : MonoBehaviour
             {
                 GameObject clicked = hit.collider.gameObject;
 
-                // Nếu click vào box (tag = "Box")
+              
                 if (clicked.CompareTag("Box"))
                 {
-                    // Mỗi khi click vào 1 box, hiện lại các cube nếu đang bị ẩn
+                   
                     foreach (GameObject cube in cubesToHide)
                     {
                         if (!cube.activeSelf)
@@ -50,14 +50,14 @@ public class BoxSwapperWithCubes : MonoBehaviour
     {
         if (firstBox != null && secondBox != null)
         {
-            // Đổi vị trí của 2 box
+            
             Vector3 temp = firstBox.transform.position;
             firstBox.transform.position = secondBox.transform.position;
             secondBox.transform.position = temp;
 
             Debug.Log("Đã đổi chỗ " + firstBox.name + " và " + secondBox.name);
 
-            // Ẩn các cube được chỉ định
+            
             foreach (GameObject cube in cubesToHide)
             {
                 cube.SetActive(false);

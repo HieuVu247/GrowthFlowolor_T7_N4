@@ -2,7 +2,7 @@
 
 public class BoxColorChanger : MonoBehaviour
 {
-    // Danh sách các tag màu mà box có thể va chạm
+   
     [Header("Tag màu hợp lệ (phải có Renderer)")]
     public string[] colorTags = { "red", "blue", "green", "yellow", "purple" };
 
@@ -17,7 +17,7 @@ public class BoxColorChanger : MonoBehaviour
 
                 if (selfRenderer != null && otherRenderer != null)
                 {
-                    // Đổi màu của box thành màu của vật chạm vào
+                    
                     selfRenderer.material.color = otherRenderer.material.color;
                     Debug.Log($"{gameObject.name} đã đổi màu theo {tag}");
                 }
